@@ -223,7 +223,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.nav_btn {
+		display: none;
+	}
 }
 
 /* Medium Devices, Desktops */
