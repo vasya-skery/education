@@ -62,7 +62,7 @@
 		-o-transition: all 0.3s;
 		transition: all 0.3s;
 		z-index: 1000;
-		
+		margin-top: 0;
 	}
 	.top_header .header_nav ul li a {
 		display: block;
@@ -86,11 +86,121 @@
 		display: block;
 		float: none;
 	}
+	.contact address ul li {
+		display: block;
+		width: 100%;
+		margin: 25px 0;
+	}
+	.contact .form .btn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 155px;
+		width: 100%;
+	}
+	.footer .footer_nav ul li {
+		display: block;
+		text-align: center;
+		width: 100%;
+		border-bottom: 1px solid #252525;
+		font-size: 18px;
+		font-family: "Montserrat"
+		font-weight: 700;
+	}
+	.footer .footer_nav ul li a {
+		display: block;
+		padding: 15px 0;
+	}
+	.footer .logo {
+		text-align: center;
+	}
+	.footer .logo img {
+		margin-right: 5px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	h1 {
+		font-size: 36px;
+	}
+	h5 {
+		font-size: 14px;
+	}
+	.header_slider {
+		padding: 100px 0 100px;
+	}
+	.header_slider h1 {
+		padding-bottom: 20px;
+	}
+	input.btn, a.btn {
+		padding: 10px 15px;
+	}
+	section.about .right {
+		padding-left: 0;
+	}
+	h2 {
+	    font-size: 30px;
+	}
+	h4 {
+	    font-size: 18px;
+	}
+	section.about {
+		padding: 35px 0;
+	}
+	section.features {
+		padding: 40px 0 30px;
+	}
+	.features h4 {
+		font-size: 24px;
+	}
+	section.courses {
+		padding: 40px 0;
+	}
 
+	section.courses .item:forst-child {
+		margin-top: 0;
+	}
+	section.courses .item {
+		margin-top: 20px;
+	}
+	section.courses h2 {
+		padding-bottom: 0;
+	}
+	section.teachers .item .face {
+		margin: 0 auto;
+	}
+	section.teachers .item .text {
+		text-align: center;
+	}
+	section.teachers .item {
+		margin: 10px 0;
+	}
+	.programs {
+		padding: 35px 0;
+	}
+	.programs h2 {
+		padding-bottom: 0px;
+	}
+	.programs .item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.subscribe h3 {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.subscribe .input {
+		display: block;
+		width: 100%;
+	}
+	.subscribe input.btn {
+		margin: 40px auto 0 auto;
+		display: block;
+		max-width: 180px;
+		width: 100%;
+	}
+	
 }
 
 /* Custom, iPhone Retina */
