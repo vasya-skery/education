@@ -7,12 +7,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
-	.footer .footer_nav ul li,
+	.footer .footer_nav li,
 	.top_header .header_nav ul li {
 		margin: 0 4px;
 	}
-	.footer .footer_nav ul li a,
-	.top_header .header_nav ul li a {
+	.footer .footer_nav a,
+	.top_header .header_nav a {
 		padding: 2px;
 		font-size: 15px;
 	}
@@ -64,7 +64,7 @@
 		z-index: 1000;
 		margin-top: 0;
 	}
-	.top_header .header_nav ul li a {
+	.top_header .header_nav a {
 		display: block;
 		text-align: center;
 		font-size: 18px;
@@ -72,7 +72,7 @@
 		font-family: "Nunito Sans", sans-serif;
 		font-weight: 700;
 	}
-	.top_header .header_nav ul li {
+	.top_header .header_nav li {
 		border-bottom: 1px solid #252525;
 	}
 	.top_header .header_nav.active {
@@ -82,11 +82,11 @@
 		transition: all 0.3s;
 	}
 
-	.top_header .header_nav ul li {
+	.top_header .header_nav li {
 		display: block;
 		float: none;
 	}
-	.contact address ul li {
+	.contact address li {
 		display: block;
 		width: 100%;
 		margin: 25px 0;
@@ -98,16 +98,16 @@
 		max-width: 155px;
 		width: 100%;
 	}
-	.footer .footer_nav ul li {
+	.footer .footer_nav li {
 		display: block;
 		text-align: center;
 		width: 100%;
 		border-bottom: 1px solid #252525;
 		font-size: 18px;
-		font-family: "Montserrat"
+		font-family: "Montserrat",sans-serif;
 		font-weight: 700;
 	}
-	.footer .footer_nav ul li a {
+	.footer .footer_nav a {
 		display: block;
 		padding: 15px 0;
 	}
@@ -158,7 +158,7 @@
 		padding: 40px 0;
 	}
 
-	section.courses .item:forst-child {
+	section.courses .item:first-child {
 		margin-top: 0;
 	}
 	section.courses .item {
@@ -180,7 +180,7 @@
 		padding: 35px 0;
 	}
 	.programs h2 {
-		padding-bottom: 0px;
+		padding-bottom: 0;
 	}
 	.programs .item {
 		padding-left: 15px;

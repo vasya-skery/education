@@ -13,20 +13,8 @@
 	<meta name="author" content="Melnychuk Vasyl">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="libs/normalize/normalize.css">
-	<!-- Bootstrap v3.3.4 Grid Styles -->
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
-
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
 	
 	
-	
-
-	
-
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
@@ -35,20 +23,28 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 
+	<link rel="stylesheet" href="libs/normalize/normalize.css">
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
 
 </head>
 
 <body>
-
 	<header class="header_wrap">
 		<section class="top_header container">
 			<div class="row">
 				<div class="col-sm-4">
-					<div class="logo">
+					<figure class="logo">
 						<a href="#" class="link"></a>
 						<img src="img/icons/logo.svg" alt="logo" title="logo"  class="education">
 						<span class="logo_text text-white">education</span>
-					</div>
+					</figure>
 				</div>
 				<div class="col-sm-8">
 					<div class="nav_btn"> <!-- for show on close btn add class "active" -->
@@ -59,11 +55,11 @@
 					<nav class="header_nav  nav"> <!-- for show on mobile add class "active" -->
 						<ul>
 						   <li><a href="#">Home</a></li>
-						   <li><a href="#">About us</a></li>
-						   <li><a href="#">Courses</a></li>
-						   <li><a href="#">Teachers</a></li>
-						   <li><a href="#">Programs</a></li>
-						   <li><a href="#">Contact</a></li>
+						   <li><a href="#about">About us</a></li>
+						   <li><a href="#courses">Courses</a></li>
+						   <li><a href="#teachers">Teachers</a></li>
+						   <li><a href="#programs">Programs</a></li>
+						   <li><a href="#contact">Contact</a></li>
 						 </ul>
 					</nav>
 				</div>
@@ -73,8 +69,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="item col-xs-12">
-						<h1 class="text-center text-white">Knowledge is power</h1>
-						<h5 class="text-center text-white">Any succesful creer starts with good</h5>
+						<header>
+							<h1 class="text-center text-white">Knowledge is power</h1>
+							<h5 class="text-center text-white">Any succesful creer starts with good</h5>
+						</header>
 						<div class="text-center">
 							<a href="#" class="btn">Learn more</a>
 						</div>
@@ -84,7 +82,7 @@
 			
 		</section>
 	</header>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-xs-12">
@@ -92,9 +90,11 @@
  					</div>
 					<div class="col-sm-6 col-xs-12">
 						<div class="right">
-							<h2>Education</h2>
-							<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic
-								iure natus animi eveniet reprehenderit nesciunt. Officiis quas veritatis iusto rerum autem.</p>
+							<header>
+								<h2>Education</h2>
+								<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates hic
+									iure natus animi eveniet reprehenderit nesciunt. Officiis quas veritatis iusto rerum autem.</p>
+							</header>
 							<ul class="about_list">
 								<li><img class="icon" src="img/icons/exam.svg" alt="exam" title="exam" ><h4>Learn enything</h4></li>
 								<li><img class="icon" src="img/icons/professor.svg" alt="professor" title="professor" ><h4>Talk to our instructors</h4></li>
@@ -105,11 +105,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="features">
+		<section class="features" id="features">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-center">Features</h2>
+						<header>
+							<h2 class="text-center">Features</h2>
+						</header>
 					</div>
 				</div>
 				<div class="row">
@@ -123,7 +125,8 @@
 								</div>
 							</div>
 							<h4 class="text-center">Online testing</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex labore ducimus quibusdam et consectetur explicabo nihil.</p>
+							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex 
+							labore ducimus quibusdam et consectetur explicabo nihil.</p>
 						</div>
 					</div>
 					<div class="col-sm-4 text-center">
@@ -131,12 +134,14 @@
 							<div class="icon_wrap">
 								<div class="dt">
 									<div class="dtc">
-										<img src="img/icons/grandfather.svg" alt="grandfather" title="grandfather"  class="icon icon-grandfather">
+										<img src="img/icons/grandfather.svg" alt="grandfather" title="grandfather"  
+										class="icon icon-grandfather">
 									</div>
 								</div>
 							</div>
 							<h4 class="text-center">Expert Professors</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex labore ducimus quibusdam et consectetur explicabo nihil.</p>
+							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex 
+							labore ducimus quibusdam et consectetur explicabo nihil.</p>
 						</div>
 					</div>
 					<div class="col-sm-4 text-center">
@@ -149,7 +154,8 @@
 								</div>
 							</div>
 							<h4 class="text-center">Trusted Certifications</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex labore ducimus quibusdam et consectetur explicabo nihil.</p>
+							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex 
+							labore ducimus quibusdam et consectetur explicabo nihil.</p>
 						</div>
 					</div>
 				</div>
@@ -165,7 +171,8 @@
 								</div>
 							</div>
 							<h4 class="text-center">Scientific Research</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex labore ducimus quibusdam et consectetur explicabo nihil.</p>
+							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex 
+							labore ducimus quibusdam et consectetur explicabo nihil.</p>
 						</div>
 					</div>
 					<div class="col-sm-4 text-center">
@@ -178,7 +185,8 @@
 								</div>
 							</div>
 							<h4 class="text-center">Audio Video course</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex labore ducimus quibusdam et consectetur explicabo nihil.</p>
+							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex 
+							labore ducimus quibusdam et consectetur explicabo nihil.</p>
 						</div>
 					</div>
 					<div class="col-sm-4 text-center">
@@ -191,18 +199,21 @@
 								</div>
 							</div>
 							<h4 class="text-center">Professional Courses</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex labore ducimus quibusdam et consectetur explicabo nihil.</p>
+							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ex 
+							labore ducimus quibusdam et consectetur explicabo nihil.</p>
 						</div>
 					</div>
 					
 				</div>
 			</div>
 		</section>
-		<section class="courses">
+		<section class="courses" id="courses">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-center">Courses</h2>
+						<header>
+							<h2 class="text-center">Courses</h2>
+						</header>
 					</div>
 				</div>
 			</div>
@@ -263,10 +274,12 @@
 				</div>
 			</div>
 		</section>
-		<section class="teachers">
+		<section class="teachers" id="teachers">
 			<div class="container">
 				<div class="row">
-					<h2 class="text-center">Our Teachers</h2>
+					<header>
+						<h2 class="text-center">Our Teachers</h2>
+					</header>
 				</div>
 			</div>
 			<div class="container">
@@ -359,16 +372,18 @@
 				</div>
 			</div>
 		</section>
-		<section class="programs">
+		<section class="programs" id="programs">
 			<div class="container">
 				<div class="row">
-					<h2 class="text-center">Programs</h2>
+					<header>
+						<h2 class="text-center">Programs</h2>
+					</header>
 				</div>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
-						<div class="item" style="background-image: url(img/programs/program1.jpg);">
+						<div class="item item1">
 							<div class="content">
 								<h4 class="text-center text-white">Pre-college education</h4>
 								<p class="text-center text-white">Broaden the creative 
@@ -377,7 +392,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4 col-xs-12">
-						<div class="item" style="background-image: url(img/programs/program2.jpg);">
+						<div class="item item2">
 							<div class="content">
 								<h4 class="text-center text-white">Middle school</h4>
 								<p class="text-center text-white">Children will deepen the
@@ -387,7 +402,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4 col-xs-12">
-						<div class="item" style="background-image: url(img/programs/program3.jpg);">
+						<div class="item item3">
 							<div class="content">
 								<h4 class="text-center text-white">High school</h4>
 								<p class="text-center text-white">Preparing youngsters for 
@@ -398,7 +413,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
-						<div class="item" style="background-image: url(img/programs/program4.jpg);">
+						<div class="item item4">
 							<div class="content">
 								<h4 class="text-center text-white">International exchange</h4>
 								<p class="text-center text-white">Accepting students from abroad</p>
@@ -406,7 +421,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4 col-xs-12">
-						<div class="item" style="background-image: url(img/programs/program5.jpg);">
+						<div class="item item5">
 							<div class="content">
 								<h4 class="text-center text-white">Graduate programs</h4>
 								<p class="text-center text-white">Solidifying knowledge that 
@@ -416,7 +431,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4 col-xs-12">
-						<div class="item" style="background-image: url(img/programs/program6.jpg);">
+						<div class="item item6">
 							<div class="content">
 								<h4 class="text-center text-white">Providing robust distant education</h4>
 								<p class="text-center text-white">Providing robust distant education</p>
@@ -426,7 +441,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -441,9 +456,9 @@
 									<img src="img/clients/client_3.jpg" alt="client_3" title="client_3" >
 								</div>
 							</div>
-							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-							exercitation ullamco laboris nisi ut aliquip excas.</p>
+							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+							eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+							quis nostrud exercitation ullamco laboris nisi ut aliquip excas.</p>
 							<h4 class="text-center name">John Doe</h4>
 							<h5 class="text-center prof">CEO Smart Edu</h5>
 						</div>
@@ -451,11 +466,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="blog">
+		<section class="blog" id="blog">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-center">Blog</h2>
+						<header>
+							<h2 class="text-center">Blog</h2>
+						</header>
 					</div>
 				</div>
 				<div class="row">
@@ -505,16 +522,18 @@
 				</div>
 			</div>
 		</section>
-		<section class="subscribe">
+		<section class="subscribe" id="subscribe">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
-						<h3 class="text-white">Subscribe to our Newsletter</h3>
+						<header>
+							<h3 class="text-white">Subscribe to our Newsletter</h3>
+						</header>
 					</div>
 					<div class="col-xs-12 col-md-6">
-						<form action="">
+						<form action="mail.php" method="POST">
 							<div class="input">
-								<input type="email" name="" id="">
+								<input type="email" name="email">
 							</div>
 							<input class="btn" type="submit" value="Sign Up">
 						</form>
@@ -522,11 +541,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2 class="text-center">Contact</h2>
+						<header>
+							<h2 class="text-center">Contact</h2>
+						</header>
 					</div>
 				</div>
 				<div class="row">
@@ -534,25 +555,31 @@
 						<div class="map">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.933348808245!2d-0.11863998422977183!3d51.51443877963629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761a7b6bb3055b%3A0xbdb31c970f2cb8ef!2z0JvQvtC90LTQvtC90YHRjNC60LAg0YjQutC-0LvQsCDQtdC60L7QvdC-0LzRltC60Lg!5e0!3m2!1suk!2sua!4v1539353138943" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
-						<address>
+						<address itemscope itemtype="http://schema.org/Person">
 							<ul>
 								<li class="address">
 									<img src="img/icons/you-are-here.svg" alt="you-are-here" title="you-are-here">
- 									<a href="https://goo.gl/maps/Vr6sY6xGuLz" target="_blank"><h6>LSE Houghton Street London WC2A 2AE UK.</h6></a>
+ 									<a href="https://goo.gl/maps/Vr6sY6xGuLz" target="_blank">
+ 										<h6 itemprop="address">LSE Houghton Street London WC2A 2AE UK.</h6>
+ 									</a>
 								</li>
 								<li class="email">
 									<img src="img/icons/message.svg" alt="message" title="message">
- 									<a href="mailto:hello@gmail.com"><h6>hello@gmail.com</h6></a>
+ 									<a href="mailto:hello@gmail.com">
+ 										<h6 itemprop="email">hello@gmail.com</h6>
+ 									</a>
 								</li>
 								<li class="phone">
 									<img src="img/icons/phone-call.svg" alt="phone-call" title="phone-call">
- 									<a href="tel:442074057686"><h6>+44(20) 74057686</h6></a>
+ 									<a href="tel:442074057686">
+ 										<h6 itemprop="telephone">+44(20) 74057686</h6>
+ 									</a>
 								</li>
 							</ul>
 						</address>
 					</aside>
 					<aside class="col-xs-12 col-md-6 col-md-pull-6 left">
-						<form class="form" action="" method="POST">
+						<form class="form" action="mail.php" method="POST">
 							<div class="input_wrap">
 								<input class="input" type="text" name="name" placeholder="Full Name">
 							</div>
@@ -572,33 +599,26 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<div class="footer_logo logo">
+					<figure class="footer_logo logo">
 						<a href="#" class="link"></a>
 						<img src="img/icons/logo.svg" alt="logo" title="logo"  class="education">
 						<span class="logo_text text-white">education</span>
-					</div>
+					</figure>
 				</div>
 				<div class="col-sm-8 col-md-offset-1">
 					<nav class="footer_nav nav">
 						<ul>
-						   <li><a href="#">Home</a></li>
-						   <li><a href="#">About us</a></li>
-						   <li><a href="#">Courses</a></li>
-						   <li><a href="#">Teachers</a></li>
-						   <li><a href="#">Programs</a></li>
-						   <li><a href="#">Contact</a></li>
+							<li><a href="#">Home</a></li>
+							<li><a href="#about">About us</a></li>
+							<li><a href="#courses">Courses</a></li>
+							<li><a href="#teachers">Teachers</a></li>
+							<li><a href="#programs">Programs</a></li>
+							<li><a href="#contact">Contact</a></li>
 						 </ul>
 					</nav>
 				</div>
 			</div>
 		</div>
 	</footer>
-
-	<div class="hidden"></div>
-
-
-
-
-
 </body>
 </html>

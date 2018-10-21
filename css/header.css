@@ -45,7 +45,7 @@ h6 {
 	display: none;
 }
 .header_wrap {
-	background: #fff url(img/header_slider/banner_photo.jpg) center center no-repeat;
+	background: #fff url(../img/header_slider/banner_photo.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -73,8 +73,8 @@ h6 {
 	padding: 0;
 	margin: 0;
 }
-.footer .footer_nav ul li,
-.top_header .header_nav ul li {
+.footer .footer_nav li,
+.top_header .header_nav li {
 	list-style-type: none;
 	display: inline-block;
 	vertical-align: top;
@@ -82,29 +82,28 @@ h6 {
 	float: left;
 	margin: 0 10px;
 }
-.footer .footer_nav ul li a,
-.top_header .header_nav ul li a {
+.footer .footer_nav  a,
+.top_header .header_nav a {
 	color: #fff;
 	text-decoration: none;
-	color: #fff;
 	padding: 5px;
 }
-.footer .footer_nav ul li:after,
-.top_header .header_nav ul li:after {
+.footer .footer_nav li:after,
+.top_header .header_nav li:after {
 	content: '';
 	display: block;
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 0px;
+	width: 0;
 	height: 1px;
 	background-color: #27ae61;
 	-webkit-transition: width 0.3s;
 	-o-transition: width 0.3s;
 	transition: width 0.3s;
 }
-.footer .footer_nav ul li:hover:after,
-.top_header .header_nav ul li:hover:after {
+.footer .footer_nav li:hover:after,
+.top_header .header_nav li:hover:after {
 	width: 100%;
 }
 .footer .logo,
@@ -125,6 +124,7 @@ h6 {
 	height: auto;
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 10px;
 }
 .footer .logo .logo_text,
 .top_header .logo .logo_text {
@@ -132,11 +132,10 @@ h6 {
 	text-transform: uppercase;
 	font-weight: bold;
 	vertical-align: middle;
-	font-family: ""
 	margin-left: 10px;
 }
 .header_slider {
-	padding: 200px 0px 180px;
+	padding: 200px 0 180px;
 }
 .header_slider h1 {
 	margin: 0;

@@ -43,8 +43,7 @@ section.about .right {
 }
 .about_list {
 	padding: 0;
-	margin: 0;
-	margin-top: 50px;
+	margin:50px 0 0;
 }
 .about_list li {
 	list-style-type: none;
@@ -82,13 +81,22 @@ section.features .item .icon_wrap {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
-section.features .item .icon_wrap img.icon {
+section.features .item .icon_wrap:hover {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+section.features .item img.icon {
 	max-width: 150px;
 	max-height: 150px;
 	height: auto;	
 }
-section.features .item .icon_wrap .dt {
+section.features .item .dt {
 	height: 150px;
 	width: 150px;
 }
@@ -131,38 +139,38 @@ section.courses .item .img {
 	height: 250px;
 }
 section.courses .item .img.web_design {
-	background-image: url(img/courses/web_design.jpg);
+	background-image: url(../img/courses/web_design.jpg);
 	
 }
 section.courses .item .img.photography {
-	background-image: url(img/courses/photography.jpg);
+	background-image: url(../img/courses/photography.jpg);
 	
 }
 section.courses .item .img.digital_advetising {
-	background-image: url(img/courses/digital_advetising.jpg);
+	background-image: url(../img/courses/digital_advetising.jpg);
 	
 }
 section.courses .item .main {
 	background-color: #f1f1f1;
 	padding: 35px 30px 25px 30px;
 }
-section.courses .item .main p {
+section.courses .item p {
 	color: #484848;
 	font-weight: 500;
 }
-section.courses .item .main .line {
+section.courses .item .line {
 	width: calc(100% + 60px);
 	height: 1px;
 	background-color: #cfcfcf;
 	margin-left: -30px;
 	margin-bottom: 30px;
 }
-section.courses .item .main h5 {
+section.courses .item h5 {
 	padding-bottom: 10px;
 	margin-top: 10px;
 	position: relative;
 }
-section.courses .item .main h5:after {
+section.courses .item h5:after {
 	content: '';
 	display: block;
     height: 1px;
@@ -171,7 +179,7 @@ section.courses .item .main h5:after {
 
 }
 
-section.courses .item .main .btn {
+section.courses .item .btn {
 	margin-top: 40px;
 	padding: 5px 40px;
 	width: 100%;
@@ -179,7 +187,7 @@ section.courses .item .main .btn {
 section.courses a.show_all {
 	margin-top: 35px;
 	display: inline-block;
-	font-family: "Nunito Sans"
+	font-family: "Nunito Sans",sans-serif;
 	font-weight: 700;
 	opacity: 0.5;
 	-webkit-transition: opacity 0.3s;
@@ -219,7 +227,7 @@ section.courses a.show_all:after {
 	opacity: 0.1;
 	width: 0;
 	right: 0;
-	top: 0px;
+	top: 0;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -274,6 +282,24 @@ section.teachers .item h5.prof {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 
+}
+.programs .item1 {
+	background-image: url(../img/programs/program1.jpg);
+}
+.programs .item2 {
+	background-image: url(../img/programs/program2.jpg);
+}
+.programs .item3 {
+	background-image: url(../img/programs/program3.jpg);
+}
+.programs .item4 {
+	background-image: url(../img/programs/program4.jpg);
+}
+.programs .item5 {
+	background-image: url(../img/programs/program5.jpg);
+}
+.programs .item6 {
+	background-image: url(../img/programs/program6.jpg);
 }
 .programs .item:hover {
 	transform: translateY(-10px);
@@ -351,7 +377,7 @@ section.teachers .item h5.prof {
 	margin-top: 40px;
 }
 .subscribe {
-	background: url(img/news_letter_bg.jpg) center center no-repeat;
+	background: url(../img/news_letter_bg.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 70px 0;
@@ -416,12 +442,12 @@ section.teachers .item h5.prof {
 .contact .form .input_wrap:hover:before {
 	background-color: rgba(26,26,26,1)	
 }
-.contact .form .input_wrap .input {
+.contact .form .input {
 	background-color: transparent;
 	width: 100%;
 	border: none;
 	outline: none;
-	font-family: "Montserrat";
+	font-family: "Montserrat",sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 }
@@ -450,33 +476,33 @@ section.teachers .item h5.prof {
 	margin-left: 0;
 	padding: 0;
 }
-.contact address ul li {
+.contact address li {
 	list-style-type: none;
 	display: inline-block;
 	vertical-align: top;
 	width: 30%;
 }
-.contact address ul li img {
+.contact address img {
 	display: block;
 	margin-bottom: 15px;
 }
-.contact address ul li.address img {
+.contact li.address img {
 	width: 30px;
 	height: 30px;
 }
-.contact address ul li.email img {
+.contact li.email img {
 	width: 30px;
 	height: 30px;
 }
-.contact address ul li.phone img {
+.contact li.phone img {
 	width: 30px;
 	height: 30px;
 }
-.contact address ul li {
+.contact address li {
 	text-decoration: none;
 	font-style: normal;
 }
-.contact address ul li a {
+.contact address a {
 	text-decoration: none;
 	color: #484848;
 }
@@ -489,34 +515,38 @@ section.teachers .item h5.prof {
 }
 
 .nav_btn {
-	width: 30px;
-	height: 24px;
+	width: 40px;
+	height: 34px;
 	position: fixed;
 	top: 20px;
 	right: 20px;
 	-webkit-transition: all 1.3s;
 	-o-transition: all 1.3s;
 	transition: all 1.3s;
+	z-index: 1000;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.3);
 }
+
 .nav_btn span {
 	height: 4px;
 	width: 30px;
 	position: absolute;
 	display: block;
 	background-color: #fff;
-	top: 0;
-	left: 0;
-	right: 0;
+	top: 5px;
+	left: 5px;
+	right: 5px;
 	-webkit-transition: all 1.3s;
 	-o-transition: all 1.3s;
 	transition: all 1.3s;
 }
 .nav_btn span:nth-child(2) {
-	top: 10px;
+	top: 15px;
 }
 .nav_btn span:nth-child(3) {
 	top: initial;
-	bottom: 0;
+	bottom: 5px;
 }
 .nav_btn.active {
 	right: 210px;
